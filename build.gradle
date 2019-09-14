@@ -1,0 +1,33 @@
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'
+    }
+}
+
+allprojects {
+
+    ext {
+        appName = 'Re-Remixed Dungeon'
+        appPackageName = 'com.quasistellar.rpd'
+
+        appVersionCode = 3
+        appVersionName = '0.1b'
+
+        appAndroidCompileSDK = 28
+        appAndroidMinSDK = 9
+        appAndroidTargetSDK = 28
+
+        gdxVersion = '1.9.10'
+    }
+    version = appVersionName
+
+    repositories {
+        google()
+        jcenter()
+    }
+
+}
